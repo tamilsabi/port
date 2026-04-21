@@ -63,6 +63,49 @@ section{
     color:#00e5ff;
     text-decoration:none;
 }
+
+/* Certificate Section */
+.cert{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+    text-align:center;
+}
+.cert h2{
+    margin-bottom:20px;
+}
+.cert-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.cert-item{
+    position:relative;
+    margin:15px;
+}
+.cert-item iframe{
+    width:280px;
+    height:200px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    padding:5px;
+    pointer-events:none;
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+.cert-item a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+}
+.cert-item:hover iframe{
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
 footer{
     text-align:center;
     padding:30px;
@@ -80,6 +123,10 @@ footer{
 @media(max-width:600px){
     header h1{
         font-size:1.6rem;
+    }
+    .cert-item iframe{
+        width:90%;
+        height:220px;
     }
 }
 </style>
@@ -99,7 +146,7 @@ footer{
         <p>
             I am a passionate and detail-oriented Frontend Developer with a strong foundation in HTML, CSS, and JavaScript.
             I enjoy creating responsive, user-friendly web interfaces and continuously improving my skills in modern web technologies.
-            I also have working knowledge of Python and MS Office tools, which help me in problem-solving, data handling, and productivity. 
+            I also have working knowledge of Python and MS Office tools. 
             I am eager to learn, grow, and contribute to building efficient and visually appealing applications.
         </p>
     </div>
@@ -121,55 +168,57 @@ footer{
 
         <h3>TODO List App</h3>
         <p>
-            <a href="https://github.com/tamilsabi/todo" target="_blank" style="color:#00e5ff;">
-                GitHub Repository
-            </a>
-            |
-            <a href="https://todo-three-ashen.vercel.app/" target="_blank" style="color:#00e5ff;">
-                Live Demo
-            </a>
+            <a href="https://github.com/tamilsabi/todo/blob/main/index.html" target="_blank">GitHub Repository</a> |
+            <a href="https://todo-three-ashen.vercel.app/" target="_blank">Live Demo</a>
         </p><br>
 
         <h3>Calculator App</h3>
         <p>
-            <a href="https://github.com/tamilsabi/cala" target="_blank" style="color:#00e5ff;">
-                GitHub Repository
-            </a>
-            |
-            <a href="https://cala-phi.vercel.app/" target="_blank" style="color:#00e5ff;">
-                Live Demo
-            </a>
+            <a href="https://github.com/tamilsabi/cala" target="_blank">GitHub Repository</a> |
+            <a href="https://cala-phi.vercel.app/" target="_blank">Live Demo</a>
         </p><br>
+
         <h3>Weather App</h3>
         <p>
-            <a href="https://github.com/tamilsabi/Weather-App/blob/main/index.html" target="_blank" style="color:#00e5ff;">
-                GitHub Repository
-            </a>
-            |
-            <a href="https://weather-app-rouge-phi-42.vercel.app/" target="_blank" style="color:#00e5ff;">
-                Live Demo
-            </a>
+            <a href="https://github.com/tamilsabi/Weather-App/blob/main/index.html" target="_blank">GitHub Repository</a> |
+            <a href="https://weather-app-rouge-phi-42.vercel.app/" target="_blank">Live Demo</a>
         </p><br>
-                <h3>Student Registration</h3>
+
+        <h3>Student Registration</h3>
         <p>
-            <a href="https://github.com/tamilsabi/Student-Registration/blob/main/index.html" target="_blank" style="color:#00e5ff;">
-                GitHub Repository
-            </a>
-            |
-            <a href="https://student-registration-inky-ten.vercel.app/" target="_blank" style="color:#00e5ff;">
-                Live Demo
-            </a>
+            <a href="https://github.com/tamilsabi/Student-Registration/blob/main/index.html" target="_blank">GitHub Repository</a> |
+            <a href="https://student-registration-inky-ten.vercel.app/" target="_blank">Live Demo</a>
         </p>
+    </div>
+
+    <div class="cert">
+        <h2>Certificates</h2>
+        <div class="cert-grid">
+
+            <div class="cert-item">
+                <iframe src="https://willowy-coral-bz7fcg9sys.edgeone.app/NM_Certificate%20(5).pdf"></iframe>
+                <a href="https://willowy-coral-bz7fcg9sys.edgeone.app/NM_Certificate%20(5).pdf" target="_blank"></a>
+            </div>
+
+            <div class="cert-item">
+                <iframe src="https://occupational-beige-fhutjqizvp.edgeone.app/NM_Certificate%20(3).pdf"></iframe>
+                <a href="https://occupational-beige-fhutjqizvp.edgeone.app/NM_Certificate%20(3).pdf" target="_blank"></a>
+            </div>
+
+            <div class="cert-item">
+                <iframe src="https://stiff-purple-dx3dvj2pji.edgeone.app/NM_Certificate%20(1).pdf"></iframe>
+                <a href="https://stiff-purple-dx3dvj2pji.edgeone.app/NM_Certificate%20(1).pdf" target="_blank"></a>
+            </div>
+
+        </div>
     </div>
 
     <div class="card">
         <h2>Contact</h2><br>
-        <p>Email: <b>tamilsabi78.gmail.com</b></p><br>
+        <p>Email: <b>tamilsabi78@gmail.com</b></p><br>
         <p>
             GitHub:
-            <a href="https://github.com/tamilsabi" target="_blank" style="color:#00e5ff;">
-                github.com/tamilsabi
-            </a>
+            <a href="https://github.com/tamilsabi" target="_blank">github.com/tamilsabi</a>
         </p>
     </div>
 </section>
